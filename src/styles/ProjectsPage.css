@@ -1,0 +1,60 @@
+.projects-section {
+    background-color: #f4f4f9; /* Un fondo suave */
+    padding: 40px 20px; /* Adecuado espacio alrededor de la sección */
+    text-align: center; /* Centra el texto y los elementos */
+}
+
+.projects-section h2 {
+    color: #007BFF; /* Un azul vibrante para los títulos */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.projects-section p {
+    color: #666; /* Un gris para el texto que es fácil de leer */
+    margin-bottom: 20px; /* Espacio antes de la lista de proyectos */
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten según el ancho */
+    justify-content: center; /* Centra los elementos de los proyectos */
+}
+
+.project-item {
+    width: 300px; /* Ancho fijo para cada proyecto */
+    margin: 10px; /* Espacio alrededor de cada proyecto */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para destacar */
+    padding: 20px; /* Espacio interno */
+    background-color: white; /* Fondo blanco para destacar cada proyecto */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.project-item img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+.project-item h3 {
+    color: #333; /* Oscuro para el título del proyecto */
+    margin-top: 10px; /* Espacio después de la imagen */
+}
+
+.project-item p {
+    color: #555; /* Un poco más claro que el título para el texto */
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF; /* Botón azul */
+    color: white; /* Texto blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* No subrayado */
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}

@@ -1,0 +1,57 @@
+.home-page {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333333; /* Gris oscuro */
+  background: #f4f4f9; /* Fondo suave */
+}
+
+.section {
+  margin-top: 40px;
+  text-align: left;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.about-me, .experience, .education {
+  margin-top: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 3em; /* Más grande y llamativo */
+  color: #007BFF; /* Azul eléctrico */
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #007BFF; /* Color uniforme para sub-títulos */
+}
+
+h3 {
+  margin-top: 10px;
+  color: #555555;
+  font-size: 1.8em;
+}
+
+.skills li {
+  background-color: #2ECC71; /* Verde vibrante para habilidades */
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills li:hover {
+  background-color: #24a25e; /* Oscurecer al pasar el mouse */
+  transform: scale(1.05);
+}

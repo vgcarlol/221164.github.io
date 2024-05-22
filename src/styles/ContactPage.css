@@ -1,0 +1,98 @@
+html, body {
+    height: 100%; /* Asegura que el HTML y el body ocupen toda la altura */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita barras de desplazamiento innecesarias */
+  }
+  
+  .contact-info h1 {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    color: #007BFF; /* Un azul brillante para destacar el título */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto para mejorar la legibilidad */
+}
+
+.contact-info p {
+    font-size: 1.2rem; /* Tamaño adecuado para el texto */
+    color: #ffffff; /* Color blanco para el texto */
+    margin-bottom: 1rem; /* Espacio antes de la lista */
+}
+
+.contact-info ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding predeterminado */
+    margin: 0 0 2rem 0; /* Margen debajo de la lista */
+}
+
+.contact-info li {
+    font-size: 1.1rem; /* Tamaño de fuente para los elementos de la lista */
+    color: #ffffff; /* Color blanco para los elementos de la lista */
+    background-color: rgba(0, 166, 255, 0.427); /* Fondo ligeramente azul para cada elemento */
+    margin-bottom: 0.5rem; /* Espacio entre elementos de la lista */
+    padding: 10px; /* Padding para los elementos de la lista */
+    border-radius: 5px; /* Bordes redondeados para los elementos de la lista */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Sutil sombra para los elementos */
+}
+
+.contact-info li:hover {
+    background-color: rgba(0, 123, 255, 0.3); /* Cambiar el fondo al pasar el mouse */
+}
+
+
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    width: 100vw; /* 100% del ancho de la ventana */
+    min-height: 100vh; /* Mínimo 100% de la altura de la ventana */
+    padding: 70px 0; /* Padding vertical para no pegar el contenido a los bordes */
+    background: linear-gradient(135deg, rgba(45, 48, 71, 0.85), rgba(17, 153, 142, 0.85)), url('https://example.com/background-image.jpg');
+    background-size: cover; /* Asegura que el fondo cubra todo el espacio */
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .contact-content {
+    max-width: 960px; /* Ancho máximo para el contenido */
+    width: 100%; /* Usa todo el ancho disponible hasta el máximo */
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .contact-form {
+    max-width: 500px; /* Ancho máximo del formulario */
+    width: 100%; /* Usa todo el ancho disponible hasta el máximo */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background: #f0f0f0; /* Fondo suave */
+    color: black;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+  }
+  

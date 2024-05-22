@@ -1,0 +1,59 @@
+.navbar {
+  width: 100%;
+  background-color: #F8F9FA; /* Fondo claro */
+  padding: 20px 20px; /* Más alto */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: #007BFF; /* Azul eléctrico, manteniendo un buen contraste */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s, background-color 0.3s;
+  font-size: 1.1rem; /* Más grande */
+  padding: 12px 15px;
+}
+
+.nav-link:hover {
+  background-color: #E9ECEF; /* Un gris muy suave para el hover */
+  color: #FF6B6B; /* Rojo coral para el texto durante hover */
+}
+
+.menu-icon {
+  display: none;
+  color: #007BFF; /* Azul eléctrico para el icono */
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #F8F9FA; /* Fondo claro también en móvil */
+  }
+  .nav-link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #DEE2E6; /* Un borde más suave */
+  }
+  .nav-active {
+    display: flex;
+  }
+}
