@@ -1,28 +1,52 @@
 import React from 'react';
 import '../styles/ProjectsPage.css'; // Asegúrate de que el path al archivo CSS es correcto
+import BlogImage from '../assets/blog.png';
+import StoreImage from '../assets/store.png';
+import PlusFollower from '../assets/plus-follower.png';
+import FollowerFusion from '../assets/followerfusion.png';
 
-// Datos de ejemplo de proyectos
 const proyectos = [
   {
     id: 1,
-    name: 'Proyecto Uno',
-    description: 'Descripción del Proyecto Uno.',
-    image: 'url-to-image-1.jpg',
-    link: 'http://link-to-project-1.com'
+    name: 'IEMCOOP "Sanarate"',
+    description: 'Sistema de gestión educativa y plataforma para estudiantes.',
+    image: 'https://cv.vallague.com/images/graphic-design-2.png',
+    link: 'http://iemcoop.edu.gt'
   },
   {
     id: 2,
-    name: 'Proyecto Dos',
-    description: 'Descripción del Proyecto Dos.',
-    image: 'url-to-image-2.jpg',
-    link: 'http://link-to-project-2.com'
+    name: 'Vallague',
+    description: 'Página de mi pequeña empresa.',
+    image: 'https://cv.vallague.com/images/graphic-design-4.png',
+    link: 'http://vallague.com'
   },
   {
     id: 3,
-    name: 'Proyecto Tres',
-    description: 'Descripción del Proyecto Tres.',
-    image: 'url-to-image-3.jpg',
-    link: 'http://link-to-project-3.com'
+    name: 'Blog',
+    description: 'Blog hecho para el curso de web.',
+    image: BlogImage,
+    link: 'https://github.com/vgcarlol/vgcarlol.github.io'
+  },
+  {
+    id: 4,
+    name: 'Store',
+    description: 'Tienda virtual para el curso de Ingeniería de Software 1',
+    image: StoreImage,
+    link: 'https://github.com/paulabaal12/PROY-SOFTWARE'
+  },
+  {
+    id: 5,
+    name: 'Plus-Follower',
+    description: 'Tienda de Marketing Digital',
+    image: PlusFollower,
+    link: 'https://plus-follower.com'
+  },
+  {
+    id: 5,
+    name: 'FollowerFusion',
+    description: 'Tienda de Marketing Digital',
+    image: FollowerFusion,
+    link: 'https://followerfusion.com'
   }
 ];
 
@@ -30,7 +54,6 @@ function ProjectsPage() {
   return (
     <div className="projects-page">
       <h1>Projects</h1>
-      <p>Here are some of my past projects.</p>
       <div className="project-list">
         {proyectos.map(proyecto => (
           <div key={proyecto.id} className="project-item">
